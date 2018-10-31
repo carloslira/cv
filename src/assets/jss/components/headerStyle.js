@@ -1,5 +1,4 @@
 import {
-    defaultFont,
     lightGrayColor
 } from '../theme';
 

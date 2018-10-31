@@ -4,10 +4,14 @@
 	"private": true,
 	"dependencies": {
 		"classnames": "^2.2.6",
+		"i18next": "^12.0.0",
+		"i18next-browser-languagedetector": "^2.2.3",
+		"i18next-xhr-backend": "^1.5.1",
 		"mdi-react": "^4.4.0",
 		"react": "^16.6.0",
 		"react-dom": "^16.6.0",
 		"react-flexbox-grid": "^2.1.2",
+		"react-i18next": "^8.3.5",
 		"react-jss": "^8.6.1",
 		"react-router-dom": "^4.3.1",
 		"react-scripts": "2.0.5"

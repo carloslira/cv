@@ -9,24 +9,24 @@ import pStyle from '../assets/jss/components/pStyle';
 
 class P extends React.Component {
 
-	render() {
-		const {
+    render() {
+        const {
             classes,
             children,
             className
-		} = this.props;
+        } = this.props;
 
-		return (
+        return (
             <p className={classNames(classes.p, className)}>
                 {children}
             </p>
-		);
-	}
+        );
+    }
 }
 
 P.propTypes = {
-	classes: PropTypes.object.isRequired,
-	children: PropTypes.string.isRequired
+    children: PropTypes.any.isRequired,
+    classes: PropTypes.object.isRequired
 };
 
 export default injectSheet(pStyle)(P);

@@ -18,5 +18,9 @@ export {
     defaultFont,
     primaryColor,
     secondaryColor,
-    lightGrayColor
+    lightGrayColor,
+    primaryDarkcolor,
+    primaryLightColor,
+    secondaryDarkcolor,
+    secondaryLightColor
 };
