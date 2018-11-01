@@ -1,8 +1,13 @@
+import {
+    lightGrayColor
+} from "../theme";
+
 const appStyle = theme => ({
 	wrapper: {
 		top: '0',
 		height: '100vh',
-		position: 'relative'
+        position: 'relative',
+        backgroundColor: lightGrayColor
 	}
 });
 

@@ -13,11 +13,7 @@ import {
     Grid
 } from 'react-flexbox-grid';
 
-import MapMarkerIcon from 'mdi-react/MapMarkerIcon';
-
-import P from './P';
-
-import photo from '../assets/img/photo.jpg';
+import SocialMedias from './SocialMedias';
 
 import headerStyle from '../assets/jss/components/headerStyle';
 
@@ -31,25 +27,15 @@ class Header extends React.Component {
         return (
             <NamespacesConsumer>
                 {(t, { i18n }) =>
-                    <Grid fluid className={classes.grid}>
-                        <Row center="xs" middle="md" className={classes.row}>
-                            <Col xs={12} md={3} mdOffset={2}>
-                                <img src={photo} className={classes.photo} alt="" />
-                            </Col>
-                            <Col xs={12} md={5}>
-                                <P className={classes.name}>
-                                    Carlos Lira
-								</P>
-                                <P className={classes.role}>
-                                    {t('header.role')} <b>CoinWISE</b>
-                                </P>
-                                <P className={classes.location}>
-                                    <MapMarkerIcon className={classes.mapMarkerIcon} />
-                                    {t('header.location')}
-								</P>
-                            </Col>
-                        </Row>
-                    </Grid>
+                    <div className={classes.container}>
+                        <Grid fluid>
+                            <Row>
+                                <Col xs={12}>
+                                    <SocialMedias />
+                                </Col>
+                            </Row>
+                        </Grid>
+                    </div>
                 }
             </NamespacesConsumer>
         );

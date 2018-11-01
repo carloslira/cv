@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import injectSheet from 'react-jss';
 
 import Header from '../components/Header';
+import Summary from '../components/Summary';
 
 import mainStyle from '../assets/jss/views/mainStyle';
 
@@ -17,6 +18,7 @@ class Main extends React.Component {
         return (
             <div className={classes.wrapper}>
                 <Header />
+                <Summary />
             </div>
         );
     }
