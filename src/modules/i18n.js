@@ -17,6 +17,9 @@ i18n
         defaultNS: 'translations',
         react: {
             wait: true
+        },
+        backend: {
+            loadPath: '/cv/locales/{{lng}}/{{ns}}.json'
         }
     });
 
