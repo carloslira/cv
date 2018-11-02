@@ -8,12 +8,13 @@ const socialMediasStyle = theme => ({
         listStyle: 'none'
     },
     listItem: {
-        margin: '0 7px',
+        margin: '7px',
         display: 'inline-block'
     },
     iconOutline: {
         color: 'white',
         padding: '5px',
+        outline: 'none',
         display: 'flex',
         transition: '0.3s',
         borderRadius: '50%',

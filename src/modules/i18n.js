@@ -6,6 +6,15 @@ import {
     reactI18nextModule
 } from 'react-i18next';
 
+let productionBackend = {};
+if (process.env.NODE_ENV === 'production') {
+    productionBackend = {
+        backend: {
+            loadPath: '/cv/locales/{{lng}}/{{ns}}.json'
+        }
+    };
+}
+
 i18n
     .use(Backend)
     .use(LanguageDetector)
@@ -18,9 +27,7 @@ i18n
         react: {
             wait: true
         },
-        backend: {
-            loadPath: '/cv/locales/{{lng}}/{{ns}}.json'
-        }
+        ...productionBackend
     });
 
 export default i18n;
