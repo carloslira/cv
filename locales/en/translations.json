@@ -1,4 +1,8 @@
 {
+    "languages": {
+        "en-US": "English",
+        "pt-BR": "Portuguese"
+    },
     "summary": {
         "role": "Software developer",
         "location": "Recife, PE, Brazil"
