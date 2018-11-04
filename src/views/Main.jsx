@@ -5,6 +5,7 @@ import injectSheet from 'react-jss';
 
 import Header from '../components/Header';
 import Summary from '../components/Summary';
+import Contacts from '../components/Contacts';
 
 import mainStyle from '../assets/jss/views/mainStyle';
 
@@ -19,6 +20,7 @@ class Main extends React.Component {
             <div className={classes.wrapper}>
                 <Header />
                 <Summary />
+                <Contacts />
             </div>
         );
     }

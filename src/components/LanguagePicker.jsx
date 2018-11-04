@@ -38,13 +38,17 @@ class LanguagePicker extends React.Component {
                     return (
                         <ul className={classNames(classes.list, className)}>
                             <li className={classes.listItem}>
-                                <img src={languages[lng].flagIcon} className={classes.listItemIcon} />
-                                <P className={classes.listItemText}>{t(languages[lng].nameI18nKey)}</P>
+                                <div className={classes.listItemContainer}>
+                                    <img src={languages[lng].flagIcon} className={classes.listItemIcon} alt="" />
+                                    <P className={classes.listItemText}>{t(languages[lng].nameI18nKey)}</P>
+                                </div>
                             </li>
                             {unselectedLanguagesKeys.map(key =>
                                 <li className={classes.listItem} onClick={e => i18n.changeLanguage(key)} key={key}>
-                                    <img src={languages[key].flagIcon} className={classes.listItemIcon} />
-                                    <P className={classes.listItemText}>{t(languages[key].nameI18nKey)}</P>
+                                    <div className={classes.listItemContainer}>
+                                        <img src={languages[key].flagIcon} className={classes.listItemIcon} alt="" />
+                                        <P className={classes.listItemText}>{t(languages[key].nameI18nKey)}</P>
+                                    </div>
                                 </li>
                             )}
                         </ul>

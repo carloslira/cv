@@ -5,8 +5,9 @@ const defaultFont = {
 };
 
 const primaryColor = '#C2185B';
-const primaryDarkcolor = '#AD1457';
-const primaryLightColor = '#D81B60';
+const primaryDarkcolor = '#A90042';
+const primaryLightColor = '#DC3275';
+const primaryDarkerColor = '#8F0028';
 
 const secondaryColor = '#C2185B';
 const secondaryDarkcolor = '#8C0032';
@@ -25,6 +26,7 @@ export {
     lightGrayColor,
     primaryDarkcolor,
     primaryLightColor,
+    primaryDarkerColor,
     secondaryDarkcolor,
     secondaryLightColor
 };
