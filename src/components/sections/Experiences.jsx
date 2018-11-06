@@ -4,28 +4,31 @@ import PropTypes from 'prop-types';
 import injectSheet from 'react-jss';
 import classNames from 'classnames';
 
-import pStyle from '../assets/jss/components/pStyle';
+import Timeline from '../Timeline';
 
-class P extends React.Component {
+import experiencesStyle from '../../assets/jss/components/sections/experiencesStyle';
+
+class Experiences extends React.Component {
 
     render() {
         const {
+            rel,
+            href,
+            target,
             classes,
             children,
             className
         } = this.props;
 
         return (
-            <p className={classNames(className, classes.p)}>
-                {children}
-            </p>
+            <Timeline />
         );
     }
 }
 
-P.propTypes = {
+Experiences.propTypes = {
     children: PropTypes.any.isRequired,
     classes: PropTypes.object.isRequired
 };
 
-export default injectSheet(pStyle)(P);
+export default injectSheet(experiencesStyle)(Experiences);

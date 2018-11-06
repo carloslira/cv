@@ -14,7 +14,6 @@ const socialMediasStyle = theme => ({
     iconOutline: {
         color: 'white',
         padding: '5px',
-        outline: 'none',
         display: 'flex',
         transition: '0.3s',
         borderRadius: '50%',

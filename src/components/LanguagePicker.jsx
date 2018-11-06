@@ -36,7 +36,7 @@ class LanguagePicker extends React.Component {
                     });
 
                     return (
-                        <ul className={classNames(classes.list, className)}>
+                        <ul className={classNames(className, classes.list)}>
                             <li className={classes.listItem}>
                                 <div className={classes.listItemContainer}>
                                     <img src={languages[lng].flagIcon} className={classes.listItemIcon} alt="" />

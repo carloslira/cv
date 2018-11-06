@@ -4,11 +4,15 @@ import {
 
 const appStyle = theme => ({
 	wrapper: {
-		top: '0',
-		height: '100vh',
+        height: '100vh',
+        overflowY: 'scroll',
         position: 'relative',
         backgroundColor: lightGrayColor
-	}
+    },
+    section: {
+        height: '1000px',
+        paddingTop: '64px'
+    }
 });
 
 export default appStyle;

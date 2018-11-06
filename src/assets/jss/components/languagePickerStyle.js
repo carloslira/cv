@@ -1,3 +1,7 @@
+import {
+    lightGrayColor
+} from '../theme';
+
 const languagePickerStyle = theme => ({
     list: {
         padding: '0',
@@ -18,7 +22,7 @@ const languagePickerStyle = theme => ({
         padding: '0px 20px',
         '&:hover': {
             cursor: 'pointer',
-            backgroundColor: '#EEE'
+            backgroundColor: lightGrayColor
         },
         '&:first-child': {
             border: 'none',

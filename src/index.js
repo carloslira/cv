@@ -11,6 +11,7 @@ import Main from './views/Main';
 
 import theme from './styles/theme';
 
+import './assets/css/index.css?v=1.0.0';
 import './assets/css/normalize.css?v=8.0.0';
 
 ReactDOM.render(

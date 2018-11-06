@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import injectSheet from 'react-jss';
+import classNames from 'classnames';
 
 import {
     NamespacesConsumer
@@ -22,13 +23,14 @@ class Header extends React.Component {
 
     render() {
         const {
-            classes
+            classes,
+            className
         } = this.props;
 
         return (
             <NamespacesConsumer>
                 {(t, { i18n }) =>
-                    <div className={classes.container}>
+                    <div className={classNames(className, classes.container)}>
                         <Grid fluid>
                             <Row>
                                 <Col xs={8}>

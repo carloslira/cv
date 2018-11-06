@@ -4,28 +4,31 @@ import PropTypes from 'prop-types';
 import injectSheet from 'react-jss';
 import classNames from 'classnames';
 
-import pStyle from '../assets/jss/components/pStyle';
+import aStyle from '../assets/jss/components/aStyle';
 
-class P extends React.Component {
+class A extends React.Component {
 
     render() {
         const {
+            rel,
+            href,
+            target,
             classes,
             children,
             className
         } = this.props;
 
         return (
-            <p className={classNames(className, classes.p)}>
+            <a href={href} target={target} rel={rel} className={classNames(className, classes.a)}>
                 {children}
-            </p>
+            </a>
         );
     }
 }
 
-P.propTypes = {
+A.propTypes = {
     children: PropTypes.any.isRequired,
     classes: PropTypes.object.isRequired
 };
 
-export default injectSheet(pStyle)(P);
+export default injectSheet(aStyle)(A);

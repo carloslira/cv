@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import injectSheet from 'react-jss';
+import classNames from 'classnames';
 
 import {
     NamespacesConsumer
@@ -23,13 +24,14 @@ class Summary extends React.Component {
 
     render() {
         const {
-            classes
+            classes,
+            className
         } = this.props;
 
         return (
             <NamespacesConsumer>
                 {(t, { i18n }) =>
-                    <div className={classes.container}>
+                    <div className={classNames(className, classes.container)}>
                         <div className={classes.photoOutline} />
                         <img src={placeholder} className={classes.photo} alt="" />
                         <Grid fluid>
