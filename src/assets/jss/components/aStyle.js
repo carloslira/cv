@@ -7,7 +7,8 @@ const aStyle = theme => ({
         ...defaultFont,
         margin: '0',
         color: 'white',
-        outlone: 'none',
+        outline: 'none',
+        fontWeight: '500',
         textDecoration: 'none'
     }
 });

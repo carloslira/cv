@@ -1,20 +1,19 @@
-const aStyle = theme => ({
-    timeline: {
-        margin: '0 auto',
-        maxWidth: '1200px',
-        position: 'relative',
-        '&:after': {
-            top: '0',
-            left: '50%',
-            bottom: '0',
-            width: '6px',
-            content: '""',
-            marginLeft: '-3px',
-            position: 'absolute',
-            backgroundColor: 'white'
-        }
-    },
+import {
+    primaryColor
+} from "../../theme";
+
+const timelineElementStyle = theme => ({
     container: {
+        [theme.breakpoints.down('sm')]: {
+            paddingLeft: '70px',
+            paddingRight: '25px',
+            width: 'calc(100% - 80px)',
+            '&:before': {
+                left: '60px !important',
+                borderWidth: '10px 10px 10px 0 !important',
+                borderColor: 'transparent white transparent transparent !important'
+            }
+        },
         padding: '10px 40px',
         position: 'relative',
         width: 'calc(50% - 80px)',
@@ -29,10 +28,15 @@ const aStyle = theme => ({
             borderRadius: '50%',
             position: 'absolute',
             backgroundColor: 'white',
-            border: '4px solid #FF9F55'
+            border: `4px solid ${primaryColor}`
         }
     },
     left: {
+        [theme.breakpoints.down('sm')]: {
+            '&:after': {
+                left: '15px'
+            }
+        },
         left: '0',
         '&:before': {
             width: '0',
@@ -48,6 +52,9 @@ const aStyle = theme => ({
         }
     },
     right: {
+        [theme.breakpoints.down('sm')]: {
+            left: '0%'
+        },
         left: '50%',
         '&:before': {
             width: '0',
@@ -62,6 +69,9 @@ const aStyle = theme => ({
             borderColor: 'transparent white transparent transparent',
         },
         '&:after': {
+            [theme.breakpoints.down('sm')]: {
+                left: '15px'
+            },
             left: '-16px'
         }
     },
@@ -73,4 +83,4 @@ const aStyle = theme => ({
     }
 });
 
-export default aStyle;
+export default timelineElementStyle;

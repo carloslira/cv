@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import injectSheet from 'react-jss';
 import classNames from 'classnames';
+import injectSheet from 'react-jss';
 
 import pStyle from '../assets/jss/components/pStyle';
 
@@ -24,6 +24,7 @@ class P extends React.Component {
 }
 
 P.propTypes = {
+    className: PropTypes.string,
     children: PropTypes.any.isRequired,
     classes: PropTypes.object.isRequired
 };

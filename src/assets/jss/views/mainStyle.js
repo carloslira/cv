@@ -6,8 +6,10 @@ const appStyle = theme => ({
 	wrapper: {
         height: '100vh',
         overflowY: 'scroll',
-        position: 'relative',
         backgroundColor: lightGrayColor
+    },
+    stickyBox: {
+        zIndex: '2',
     },
     section: {
         height: '1000px',

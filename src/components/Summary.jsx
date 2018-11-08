@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import injectSheet from 'react-jss';
 import classNames from 'classnames';
+import injectSheet from 'react-jss';
 
 import {
     NamespacesConsumer
@@ -56,6 +56,7 @@ class Summary extends React.Component {
 }
 
 Summary.propTypes = {
+    className: PropTypes.string,
     classes: PropTypes.object.isRequired
 };
 

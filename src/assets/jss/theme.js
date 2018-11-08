@@ -13,8 +13,13 @@ const grayColor = '#ABABAB';
 const darkGrayColor = '#4C4C4C';
 const lightGrayColor = '#E1E2E1';
 
+const transition = {
+    transition: 'all .3s ease'
+};
+
 export {
     grayColor,
+    transition,
     defaultFont,
     primaryColor,
     darkGrayColor,

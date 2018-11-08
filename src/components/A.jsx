@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import injectSheet from 'react-jss';
 import classNames from 'classnames';
+import injectSheet from 'react-jss';
 
 import aStyle from '../assets/jss/components/aStyle';
 
@@ -27,6 +27,10 @@ class A extends React.Component {
 }
 
 A.propTypes = {
+    rel: PropTypes.string,
+    target: PropTypes.string,
+    className: PropTypes.string,
+    href: PropTypes.string.isRequired,
     children: PropTypes.any.isRequired,
     classes: PropTypes.object.isRequired
 };

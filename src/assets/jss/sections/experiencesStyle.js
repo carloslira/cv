@@ -1,13 +1,13 @@
 import {
     defaultFont
-} from '../../theme';
+} from '../theme';
 
 const experiencesStyle = theme => ({
     a: {
         ...defaultFont,
         margin: '0',
         color: 'white',
-        outlone: 'none',
+        outline: 'none',
         textDecoration: 'none'
     }
 });

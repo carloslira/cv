@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import injectSheet from 'react-jss';
 import classNames from 'classnames';
+import injectSheet from 'react-jss';
 
 import EmailIcon from 'mdi-react/EmailIcon';
 import PhoneIcon from 'mdi-react/PhoneIcon';
@@ -31,6 +31,7 @@ class Contacts extends React.Component {
 }
 
 Contacts.propTypes = {
+    className: PropTypes.string,
     classes: PropTypes.object.isRequired
 };
 

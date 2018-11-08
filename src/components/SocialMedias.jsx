@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import injectSheet from 'react-jss';
 import classNames from 'classnames';
+import injectSheet from 'react-jss';
 
 import FacebookIcon from 'mdi-react/FacebookIcon';
 import LinkedinIcon from 'mdi-react/LinkedinIcon';
@@ -33,6 +33,7 @@ class SocialMedias extends React.Component {
 }
 
 SocialMedias.propTypes = {
+    className: PropTypes.string,
     classes: PropTypes.object.isRequired
 };
 

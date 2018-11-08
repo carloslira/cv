@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import injectSheet from 'react-jss';
 import classNames from 'classnames';
+import injectSheet from 'react-jss';
 
 import {
     NamespacesConsumer
@@ -60,6 +60,7 @@ class LanguagePicker extends React.Component {
 }
 
 LanguagePicker.propTypes = {
+    className: PropTypes.string,
     classes: PropTypes.object.isRequired
 };
 

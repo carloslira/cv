@@ -1,9 +1,11 @@
 import {
+    transition,
     lightGrayColor
 } from '../theme';
 
 const languagePickerStyle = theme => ({
     list: {
+        ...transition,
         padding: '0',
         float: 'right',
         height: '40px',
@@ -13,7 +15,6 @@ const languagePickerStyle = theme => ({
         borderRadius: '20px',
         display: 'inline-block',
         backgroundColor: 'white',
-        transition: 'all .3s ease',
         '&:hover': {
             height: '80px'
         }

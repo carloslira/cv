@@ -37,7 +37,7 @@ const headerStyle = theme => ({
     role: {
         fontSize: '25px',
         textAlign: 'center',
-        color: 'rgba(255, 255, 255, 0.7)'
+        color: 'rgba(255, 255, 255, 0.8)'
     }
 });
 

@@ -1,4 +1,5 @@
 import {
+    transition,
     primaryLightColor
 } from '../theme';
 
@@ -12,10 +13,10 @@ const socialMediasStyle = theme => ({
         display: 'inline-block'
     },
     iconOutline: {
+        ...transition,
         color: 'white',
         padding: '5px',
         display: 'flex',
-        transition: '0.3s',
         borderRadius: '50%',
         alignItems: 'center',
         justifyContent: 'center',
