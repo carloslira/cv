@@ -7,9 +7,9 @@ const timelineContainerStyle = theme => ({
             [theme.breakpoints.down('sm')]: {
                 left: '31px'
             },
-            top: '0',
             left: '50%',
             bottom: '0',
+            top: '-64px',
             width: '6px',
             content: '""',
             marginLeft: '-3px',
