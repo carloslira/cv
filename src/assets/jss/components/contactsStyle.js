@@ -1,11 +1,11 @@
 import {
-    primaryDarkcolor
+    primaryDarkColor
 } from '../theme';
 
 const contactsStyle = theme => ({
     container: {
         display: 'flex',
-        backgroundColor: primaryDarkcolor
+        backgroundColor: primaryDarkColor
     },
     list: {
         margin: '0 auto',

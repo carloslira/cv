@@ -1,6 +1,7 @@
 import {
     transition,
     defaultFont,
+    navbarHeight,
     primaryColor,
     primaryLightColor
 } from '../../theme';
@@ -16,7 +17,7 @@ const aStyle = theme => ({
         display: 'block',
         padding: '0 10px',
         fontWeight: '500',
-        lineHeight: '64px',
+        lineHeight: `${navbarHeight}px`,
         '&:hover': {
             cursor: 'pointer',
             backgroundColor: primaryLightColor

@@ -1,4 +1,5 @@
 import {
+    navbarHeight,
     lightGrayColor
 } from "../theme";
 
@@ -12,8 +13,7 @@ const appStyle = theme => ({
         zIndex: '2',
     },
     section: {
-        height: '1000px',
-        paddingTop: '64px'
+        paddingTop: `${navbarHeight}px`
     }
 });
 

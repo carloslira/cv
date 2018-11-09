@@ -1,3 +1,9 @@
+const navbarHeight = 64;
+
+const transition = {
+    transition: 'all .3s ease'
+};
+
 const defaultFont = {
     fontWeight: '300',
     lineHeight: '1.5em',
@@ -5,7 +11,7 @@ const defaultFont = {
 };
 
 const primaryColor = '#C2185B';
-const primaryDarkcolor = '#A90042';
+const primaryDarkColor = '#A90042';
 const primaryLightColor = '#DC3275';
 const primaryDarkerColor = '#8F0028';
 
@@ -13,18 +19,15 @@ const grayColor = '#ABABAB';
 const darkGrayColor = '#4C4C4C';
 const lightGrayColor = '#E1E2E1';
 
-const transition = {
-    transition: 'all .3s ease'
-};
-
 export {
     grayColor,
     transition,
     defaultFont,
+    navbarHeight,
     primaryColor,
     darkGrayColor,
     lightGrayColor,
-    primaryDarkcolor,
+    primaryDarkColor,
     primaryLightColor,
     primaryDarkerColor
 };

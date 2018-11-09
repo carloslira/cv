@@ -14,6 +14,9 @@ import {
     Grid
 } from 'react-flexbox-grid';
 
+import WorkIcon from 'mdi-react/WorkIcon';
+import DownloadIcon from 'mdi-react/DownloadIcon';
+
 import P from './P';
 
 import placeholder from '../assets/img/placeholder.png';
@@ -34,6 +37,8 @@ class Summary extends React.Component {
                     <div className={classNames(className, classes.container)}>
                         <div className={classes.photoOutline} />
                         <img src={placeholder} className={classes.photo} alt="" />
+                        <button className={classNames(classes.photoButton, classes.hireMeButton)}><WorkIcon className={classes.photoButtonIcon} /></button>
+                        <button className={classNames(classes.photoButton, classes.downloadButton)} onClick={this.print}><DownloadIcon className={classes.photoButtonIcon} /></button>
                         <Grid fluid>
                             <Row center="xs">
                                 <Col xs={12}>
@@ -53,6 +58,17 @@ class Summary extends React.Component {
             </NamespacesConsumer>
         );
     }
+
+    print = e => {
+        let originalContents = document.body.innerHTML,
+            printContents = document.getElementById('sections').innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+    };
 }
 
 Summary.propTypes = {

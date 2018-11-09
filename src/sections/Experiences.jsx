@@ -5,6 +5,10 @@ import classNames from 'classnames';
 import injectSheet from 'react-jss';
 
 import {
+    NamespacesConsumer
+} from 'react-i18next';
+
+import {
     Row,
     Col,
     Grid
@@ -24,20 +28,22 @@ class Experiences extends React.Component {
         } = this.props;
 
         return (
-            <Grid fluid className={className}>
-                <Row>
-                    <Col xs={12}>
-                        <TimelineContainer>
-                            <TimelineElement side="left" />
-                            <TimelineElement side="right" />
-                            <TimelineElement side="left" />
-                            <TimelineElement side="right" />
-                            <TimelineElement side="left" />
-                            <TimelineElement side="right" />
-                        </TimelineContainer>
-                    </Col>
-                </Row>
-            </Grid>
+            <NamespacesConsumer>
+                {(t, { i18n }) =>
+                    <Grid fluid className={className}>
+                        <Row center="xs">
+                            <Col xs={12} md={8}>
+                                <TimelineContainer>
+                                    <TimelineElement side="left" since={2017} until={'Present'} role={'Development Team Leader'} companyLink="https://coinwise.io/" companyName="CoinWISE" description={t('experiences.coinwise')} />
+                                    <TimelineElement side="right" since={2014} until={2017} role={'Software Engineer'} companyLink="https://www.pitang.com/" companyName="Pitang Agile IT" description={t('experiences.pitang2')} />
+                                    <TimelineElement side="left" since={2014} until={2014} role={'Intern'} companyLink="https://www.pitang.com/" companyName="Pitang Agile IT" description={t('experiences.pitang1')} />
+                                    <TimelineElement side="right" since={2013} until={2014} role={'Intern'} companyLink="http://www.vianaemoura.com.br/" companyName="Viana & Moura" description={t('experiences.viana&moura')} />
+                                </TimelineContainer>
+                            </Col>
+                        </Row>
+                    </Grid>
+                }
+            </NamespacesConsumer>
         );
     }
 }

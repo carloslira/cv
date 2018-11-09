@@ -1,5 +1,9 @@
 import {
-    primaryColor
+    transition,
+    primaryColor,
+    primaryDarkColor,
+    primaryLightColor,
+    primaryDarkerColor
 } from "../theme";
 
 const headerStyle = theme => ({
@@ -27,6 +31,41 @@ const headerStyle = theme => ({
         borderRadius: '50%',
         position: 'absolute',
         marginLeft: '-100px'
+    },
+    photoButton: {
+        [theme.printable]: {
+            display: 'none'
+        },
+        ...transition,
+        left: '50%',
+        width: '35px',
+        height: '35px',
+        border: 'none',
+        display: 'flex',
+        outline: 'none',
+        borderRadius: '50%',
+        color: primaryColor,
+        position: 'absolute',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'white',
+        '&:hover': {
+            color: 'white',
+            cursor: 'pointer',
+            backgroundColor: primaryColor
+        }
+    },
+    photoButtonIcon: {
+        width: '20px',
+        height: '20px'
+    },
+    hireMeButton: {
+        top: '-80px',
+        marginLeft: '50px'
+    },
+    downloadButton: {
+        top: '-45px',
+        marginLeft: '75px'
     },
     name: {
         color: 'white',

@@ -1,5 +1,8 @@
 import {
-    primaryColor
+    transition,
+    primaryColor,
+    darkGrayColor,
+    primaryDarkerColor
 } from "../../theme";
 
 const timelineElementStyle = theme => ({
@@ -79,7 +82,36 @@ const timelineElementStyle = theme => ({
         borderRadius: '6px',
         padding: '20px 30px',
         position: 'relative',
+        color: darkGrayColor,
         backgroundColor: 'white'
+    },
+    periodContainer: {
+        display: 'flex',
+        alignItems: 'center'
+    },
+    periodIcon: {
+        marginRight: '10px'
+    },
+    period: {
+        fontWeight: '400'
+    },
+    role: {
+        marginTop: '10px',
+        color: primaryColor
+    },
+    company: {
+        fontSize: '13px'
+    },
+    companyLink: {
+        ...transition,
+        fontWeight: '400',
+        color: darkGrayColor,
+        '&:hover': {
+            color: primaryDarkerColor
+        }
+    },
+    description: {
+        marginTop: '15px'
     }
 });
 

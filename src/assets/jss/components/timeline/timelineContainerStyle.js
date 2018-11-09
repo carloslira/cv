@@ -1,3 +1,7 @@
+import {
+    navbarHeight
+} from '../../theme';
+
 const timelineContainerStyle = theme => ({
     container: {
         margin: '0 auto',
@@ -9,12 +13,12 @@ const timelineContainerStyle = theme => ({
             },
             left: '50%',
             bottom: '0',
-            top: '-64px',
             width: '6px',
             content: '""',
             marginLeft: '-3px',
             position: 'absolute',
-            backgroundColor: 'white'
+            backgroundColor: 'white',
+            top: `-${navbarHeight}px`
         }
     }
 });

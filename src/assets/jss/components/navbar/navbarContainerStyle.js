@@ -2,6 +2,7 @@ import {
     transition,
     defaultFont,
     primaryColor,
+    navbarHeight,
     primaryLightColor,
     primaryDarkerColor
 } from '../../theme';
@@ -9,8 +10,8 @@ import {
 const aStyle = theme => ({
     container: {
         width: '100%',
-        height: '64px',
         display: 'flex',
+        height: `${navbarHeight}px`,
         backgroundColor: primaryDarkerColor
     },
     list: {
@@ -28,7 +29,7 @@ const aStyle = theme => ({
         display: 'block',
         padding: '0 10px',
         fontWeight: '500',
-        lineHeight: '64px',
+        lineHeight: `${navbarHeight}px`,
         '&:hover': {
             cursor: 'pointer',
             backgroundColor: primaryLightColor
